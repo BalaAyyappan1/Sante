@@ -1,0 +1,17 @@
+{% extends 'base-reg.html' %} {% block content %} {% load static %}
+<link rel="stylesheet" href="{% static 'css/home.css'  %}" />
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login | Sante</title>
+  </head>
+  <body>
+    <form method="post" class="login-form">
+      <h1>Login Form</h1>
+      {% csrf_token %} {{ form.as_p }}
+      <button type="submit" class="btn-1">Login</button>
+    </form>
+  </body>
+</html>
+
+{% endblock %}

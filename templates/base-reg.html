@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sante | Register{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+    <header class="nav-header">
+      <div class="nav-container">
+        <div class="name-logo">
+          <a href="{% url 'home' %}">SANTE</a>
+        </div>
+
+        <div class="login">
+          <a href="{% url 'login' %}"> <b>LOG IN</b> </a>
+        </div>
+      </div>
+
+      <div class="line"></div>
+    </header>
+
+    {% block content %} {% endblock %}
+  </body>
+</html>

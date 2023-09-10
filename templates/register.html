@@ -1,0 +1,45 @@
+{% extends 'base-reg.html' %} {% load static %}
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Rubik:400,700"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Aclonica"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="{% static 'css/home.css'  %}" />
+{% block content %}
+
+<form class="reg-form" method="POST">
+  {% csrf_token %}
+
+  <div class="session">
+    <h2>Welcome! Let’s customize <br />Sante for your goals.</h2>
+    <button class="btn-main" type="button" onclick="nextStep()">
+      CONTINUE
+    </button>
+  </div>
+
+  <div class="session" style="display: none">
+    {{ personal_form.as_p }}
+
+    <button class="btn-1" type="button" onclick="prevStep()">Back</button>
+    <button class="btn-1" type="button" onclick="nextStep()">Next</button>
+  </div>
+
+  <div class="session" style="display: none">
+    {{ body_form.as_p }}
+    <button class="btn-1" type="button" onclick="prevStep()">Back</button>
+    <button class="btn-1" type="button" onclick="nextStep()">Next</button>
+  </div>
+
+  <div class="session" style="display: none">
+    {{ goal_form.as_p }}
+    <button class="btn-1" type="button" onclick="prevStep()">Back</button>
+    <button class="btn-1" type="submit">Register</button>
+  </div>
+</form>
+
+<script src="{% static 'js/main.js' %}"></script>
+
+{% endblock %}

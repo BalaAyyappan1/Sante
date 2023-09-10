@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sante | Home</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,700"/>
+    <script src="{% static 'js/main.js' %}"></script>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+  </head>
+  <body>
+    <header class="nav-header">
+      <div class="nav-container">
+
+    <div class="name-logo">
+      <a href="{% url 'home' %}">SANTE</a>
+    </div>
+
+       <!-- <div class="logo">
+          <img src="{% static 'assets/logo.png' %}" alt="logo" />
+        </div>t -->  
+
+        <div class="login">
+          <a href="{% url 'login' %}"> <b>LOG IN</b> </a>
+        </div>
+      </div>
+
+      <div class="line"></div>
+    </header>
+
+    <div class="main">
+      <div class="img-box">
+        <img
+          class="main-img"
+          src="{% static 'assets/hero-slice@2x.webp' %}"
+          alt="strawberry"
+        />
+      </div>
+
+      <div class="btn-1">
+        <div>
+          <button type="button"> <a href="{% url 'register' %}">Get Started</a> </button>
+        </div>
+      </div>
+
+      <div class="capt-1">
+        <div class="capt-1-container">
+          <p>
+            Track, Share & <br> Inspire<br />
+        <div class="bra-1">
+          <p>Sante - the perfect app to track your<br> calories and connect with like-minded<br> individuals.</p>
+        </div>  
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

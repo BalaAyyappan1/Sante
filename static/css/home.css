@@ -1,0 +1,674 @@
+body {
+  font-family: "Rubik", sans-serif;
+  color: #333;
+  margin: 0;
+  background-color: #fff;
+}
+
+.nav-header {
+  background-color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+
+}
+
+.name-logo a {
+  font-family: Garamond, serif;
+  font-size: 32px;
+  color: rgb(25, 67, 207);
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.5;
+  margin-left: 80px;
+}
+
+.logo img {
+  width: 110px;
+  height: 110px;
+  padding-top: 10%;
+  
+}
+
+.logo {
+  margin-left: 60px;
+}
+
+.login a {
+  color: #212121;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 150px;
+  margin-top: 10px;
+  font-family: "Rubik", sans-serif;
+
+}
+
+.logout a{
+  color: #212121;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: -160%;
+  font-family: "Rubik", sans-serif;
+}
+
+.btn-1 a {
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+.btn-1 button {
+  background-color: rgb(25, 67, 207);
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 12.2%;
+  margin-top: 30%;
+  margin-bottom: 4%;
+  width: 10%;
+  height: 10%;
+  font-family: "Rubik", sans-serif;
+}
+
+
+
+
+.img-box {
+  width: 45%;
+  height: 90%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.img-box .main-img {
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  object-position: center bottom;
+  left: 40%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+
+
+.capt-1  p {
+  display: flex;
+  color: #212121;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  font-size: 62px;
+  margin-left: 190px;
+  margin-top: -25%;
+}
+
+
+.capt-1 .bra-1 p{
+  font-family: "Rubik", sans-serif;
+  color: #212121;
+  margin-top: 5%;
+  font-size: 25px;
+  font-weight: normal;
+  margin-top: -3%;
+}
+
+
+
+
+.reg-form .btn-1 {
+   background-color: rgb(25, 67, 207);
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 2%;
+  }
+  
+.reg-form h2{
+  padding-top: 39%;
+}
+  
+.reg-form .session .btn-1{
+  margin-left: 20%;
+  margin-top: 6%;
+}
+
+.reg-form .btn-main {
+  background-color: rgb(25, 67, 207);
+ color: #fff;
+ text-decoration: none;
+ font-size: 16px;
+ font-weight: bolder;
+ font-family: "Rubik", sans-serif;
+ padding: 16px 150px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ margin-left: 11%;
+ margin-top: 34%;
+
+ }
+ 
+.reg-form{
+  background: #fff;
+    width: 500px;
+    height: 622px;
+    margin: 80px auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    border-radius: 4px;
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+  
+  }  
+
+h2{
+ text-align: center;
+ padding-top: 39%;
+ font-weight: bolder;
+ font-family: "Rubik", sans-serif;
+ font-size: 24px;
+line-height: 32px;
+}
+
+.reg-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: larger;
+  font-family: "Rubik", sans-serif;
+  margin-left: 17%;
+  margin-top: 7%;
+}
+
+.reg-form .session{
+  padding-top: 9%;
+}
+
+
+.reg-form input[type="text"], 
+.reg-form input[type="password"],
+.reg-form input[type="number"],
+.reg-form select  {
+  display: block;
+  width: 60%;
+  padding-top: 18px;
+  margin-left: 17%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  
+}
+
+.reg-form input[type="text"]:focus,
+.reg-form input[type="password"]:focus,
+.reg-form input[type="number"]:focus,
+.reg-form select:focus {
+  outline: none;
+  border-color: #03AEF1;
+  box-shadow: 0 0 5px #03AEF1;
+}
+.reg-form select {
+  width: 63%;
+}
+
+.gender-radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 17%;
+  margin-bottom: 20px;
+  width: 60%;
+}
+
+.gender-radio label {
+  margin-right: 20px;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+.gender-radio input[type="radio"] {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.gender-radio input[type="radio"]:checked + label {
+  color: #fff;
+  background-color: #03AEF1;
+  border-color: #03AEF1;
+}
+
+.gender-radio input[type="radio"]:focus + label {
+  box-shadow: 0 0 0 2px rgba(3, 174, 241, 0.5);
+}
+
+.gender-radio input[type="radio"]:hover + label {
+  background-color: #e5f5fa;
+}
+
+.login-form{
+  background: #fff;
+  width: 500px;
+  height: 622px;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-form .btn-1{
+  background-color: rgb(25, 67, 207);
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 28%;
+  margin-left: 16%;
+  width: 67%;
+  font-weight: bold;
+}
+
+.login-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: larger;
+  font-family: "Rubik", sans-serif;
+  margin-left: 17%;
+  margin-top: 25%;
+}
+
+
+.login-form input[type="text"], 
+.login-form input[type="password"],
+.login-form input[type="number"],
+.login-form select  {
+  display: block;
+  width: 60%;
+  
+  margin-left: 17%;
+  padding: 10px;
+  margin-bottom: -25%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus,
+.login-form input[type="number"]:focus,
+.login-form select:focus {
+  outline: none;
+  border-color: #03AEF1;
+  box-shadow: 0 0 5px #03AEF1;
+}
+
+.login-form h1{
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: -8%;
+}
+
+.errorlist{
+  color: red;
+  margin-bottom: 20px;
+}
+
+.food-intake {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3%;
+  
+}
+
+
+.food-intake input[type="text"],
+.food-intake input[type="number"],
+.food-intake select {
+  width: 14%;
+  padding: 0.5rem;
+  margin-bottom: 0.1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+
+
+.food-intake button{
+  background-color: rgb(25, 67, 207);
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.5rem;
+  width: 6%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 8.5rem;
+}
+
+
+.bmi, .bmi-message, .bmr {
+  font-weight: bolder;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  color: rgb(25, 67, 207); 
+}
+
+.bmi{
+  font-size:45px;
+}
+
+
+.food a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:rgb(25, 67, 207);
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.food a:hover {
+  background-color: rgb(90, 80, 80);
+}
+
+.success{
+  text-align: center;
+  font-size: large;
+  
+}
+
+.success .bmi-col, .bmr-col{
+  text-align: center;
+  font-weight: 400;
+}
+.bmr{
+  font-size: 60px;
+  text-align: center;
+}
+
+
+.success{
+  background: #fff;
+  width: 620px;
+  height: 622px;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+
+.success .welcome{
+  text-align: center;
+  margin-top: 5%;
+  
+}
+
+
+.success p{
+  font-size: 22px;
+  text-align: center;
+}
+
+
+/* Style for the main heading */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+/* Style for the form */
+form {
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+/* Style for the form fields */
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+form input[type="submit"] {
+  padding: 0.5rem;
+  background-color: rgb(25, 67, 207);
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Style for the table */
+table {
+  width: 70%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  margin-left: 6%;
+  margin-top: 5%;
+}
+
+
+/* Style for the table headings */
+thead th {
+  padding: 0.5rem;
+  background-color: rgb(25, 67, 207);
+  color: #fff;
+  
+  font-size: 1.05rem;
+}
+
+/* Style for the table rows */
+tbody td {
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+}
+
+/* Style for the "Delete" button */
+.food-track input[type="submit"] {
+  background-color: #c4341e;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.food-track input[type="submit"] :hover{
+  background-color: #ddd6d5;
+  
+}
+
+.food-track .food-list h1,h2{
+  margin-top: 0%;
+  margin-bottom: -30%;
+
+}
+
+thead th:first-child(1),
+tbody td:first-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2),
+tbody td:nth-child(2) {
+  width: 10%;
+}
+
+
+/* animation for bmr*/
+
+/* .circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin: 0 auto;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #00bfa5;
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.text {
+  text-align: center;
+  margin-top: 20px;
+} */
+
+.bmr-success {
+  font-weight: bold;
+  font-size: larger;
+  font-size: 40px;
+}
+
+.total {
+  font-weight: bold;
+  color: #00bfa5;
+  font-size: 40px;
+}
+
+.meal-tracking {
+  position: absolute;
+  top: 15%;
+  right: 23%;
+  margin: 20px;
+  font-size: 35px;
+  font-family: "Rubik", sans-serif;
+}
+
+.meal-tracking .text{
+  text-align: center;
+  margin-top: 16%;
+}
+
+/* date field */
+
+.date-selector {
+  display: flex;
+  align-items: center;
+  padding-left: 55%;
+  position: fixed;
+  top: 13%;
+  left: 32%;
+  
+}
+
+.date-selector label {
+  margin-right: 10px;
+}
+
+.date-selector input[type="date"] {
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.date-selector button[type="submit"] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(25, 67, 207);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 4%;
+}

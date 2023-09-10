@@ -1,0 +1,101 @@
+{% extends 'base-login.html' %} {% load static %} {% block content %}
+<h1>Add Food Intake</h1>
+<form method="post" class="food-intake">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Add</button>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Food Name</th>
+      <th>Serving Size</th>
+      <th>Calories</th>
+      <th>Protein</th>
+      <th>Carbohydrates</th>
+      <th>Fat</th>
+      <th>Date</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for food_intake in food_intakes %}
+    <tr>
+      <td>{{ food_intake.food_name }}</td>
+      <td>{{ food_intake.serving_size }}</td>
+      <td>{{ food_intake.calories }}</td>
+      <td>{{ food_intake.protein }}</td>
+      <td>{{ food_intake.carbohydrates }}</td>
+      <td>{{ food_intake.fat }}</td>
+      <td>{{ food_intake.date }}</td>
+      <td>
+        <form
+          method="POST"
+          action="{% url 'delete_food_intake' food_intake.id %}"
+          class="food-track"
+        >
+          {% csrf_token %}
+          <input type="submit" value="Delete" />
+        </form>
+      </td>
+    </tr>
+
+    {% empty %}
+    <tr>
+      <td colspan="7">No food intake recorded yet.</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<div class="meal-tracking">
+  <div class="circle">
+    <div class="progress"></div>
+    <div class="icon"></div>
+  </div>
+  <div class="text">
+    <p>Eat upto <span class="bmr-success">{{ bmr }}</span> calories per day.</p>
+    <p>
+      Your total calories for today is
+      <span class="total">{{ total_calories }}</span> calories.
+    </p>
+  </div>
+</div>
+
+<form method="get" class="date-selector">
+  <label for="date">Select date to see <br />previous records:</label>
+  <input type="date" id="date" name="date" value="{{ date_str }}" />
+  <button type="submit">Go</button>
+</form>
+
+{% comment %}
+<script>
+  const circle = document.querySelector('.circle');
+  const progress = document.querySelector('.progress');
+
+  // Set the max calories as the BMR
+  const maxCalories = {{ bmr }};
+
+  // Set the initial calories to 0
+  let calories = {{ total_calories }};
+
+  // Function to update the progress bar
+  function updateProgressBar() {
+    const percentage = (calories / maxCalories) * 100;
+    progress.style.transform = `scaleY(${percentage / 100})`;
+  }
+
+  // Call the function to initially set the progress bar
+  updateProgressBar();
+
+  // Event listener to update the calories when the form is submitted
+  const form = document.querySelector('.food-intake');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const caloriesInput = document.querySelector('#id_calories');
+    calories += parseInt(caloriesInput.value);
+    caloriesInput.value = '';
+    updateProgressBar();
+    form.submit();
+  });
+</script>
+{% endcomment %} {% endblock %}

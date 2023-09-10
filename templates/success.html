@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Success!</title>
+  </head>
+  <body>
+{% extends 'base-login.html' %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/home.css'  %}" />
+
+{% block content %}
+  <div class="success">
+      <div class="welcome">
+        <h1 class="wel-text">Congratulations, {{ full_name }}!</h1>
+    </div>
+    <div class="bmr-col">
+      <p><br>Your daily net calorie goal is:<br><br> <span class="bmr">{{ bmr }}</span></p>
+    </div>
+
+    <div class="bmi-col">
+      <p>Your BMI is  <span class="bmi">{{ bmi }}</span> which is <br>considered <span class="bmi-message">{{ bmi_message}}</span><br></p>
+    </div>
+        
+      <div class="food">
+        <a href="{% url 'add_food_intake' %}"> <b>Start tracking food</b> <x/a>
+      </div>
+    </div>
+{% endblock %}
+  </body>
+</html>
